@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(43, 65, 38);
+    }
+    header{
+        background-color: aliceblue;
+        padding: 10px;
+        margin: 10px;
+
+    }
+    main{
+        background-color: aliceblue;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 20px 0px;
+        box-shadow: 4px 4px 9px 0px black;
+
+    }
+    footer{
+        background-color: rgb(11, 12, 12);
+        color: rgb(248, 241, 241);
+        text-align: center;
+        margin: 0px;
+        padding: 1px;
+
+    }
+    article{
+        background-color: rgb(228, 135, 15);
+        padding: 5px;
+    }
+    article > aside{
+        background-color: blueviolet;
+    }
+    nav{
+        background-color: rgb(78, 78, 82);
+        padding: 3px;
+        box-shadow: 5px 3px 5px 7px rgba(0, 0, 0, 0.808);
+    }
+    nav > a {
+        text-decoration: none;
+        color:rgb(233, 236, 236);
+        font-weight:bold;
+        margin-right: 30px;
+    }
+    nav > a:hover{
+        text-decoration: underline;
+    }
+    footer > p{
+        margin: 0px;
+    }
+    div#bola{
+        height: 100px;
+        width: 100px;
+        background-color: aliceblue;
+        margin: 10px;
+        border-radius: 50%;
+    }
+</style>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <!-- nav -> tag para conteúdo de menu  -->
+        <nav> 
+            <a href="#"> Link</a>
+            <a href="#"> Link</a>
+            <a href="#"> Link</a>
+            <a href="#"> Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+            <p>Esportes Politica Tecnologia</p>
+
+        </section >
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui veniam ab sunt officiis alias incidunt, deleniti pariatur deserunt, explicabo repellat itaque eius, consequuntur hic quas fugit consectetur temporibus delectus impedit?</p>
+                <aside>
+                    <p>Artigo escrito Fulano de tal</p>
+                </aside>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo @RobersonFerreira</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
