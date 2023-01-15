@@ -1,24 +1,44 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root{
+    --font1:Verdana, Geneva, Tahoma, sans-serif;
+    --font2:'Passion One', cursive; /*títulos*/
+    --font3:'Sriracha', cursive; /*texto*/
+    
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em; /*É um padrão de tamanho de fonte*/
+    
 }
 
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--font1);
 }
 
 header{
     background-color: black;
     color: aliceblue;
     text-align: center;
-    padding: 50px;
+    
+}
+header > h1{
+    padding-top: 50px;
     /* text-transform: uppercase; Tranforma todas as letras em maiúscula */
     font-variant: small-caps;
+    font-family: var(--font1);
+    font-size: 5vw;
 }
-
+header > p{
+    padding-bottom:50px;
+}
 header a, footer a{
     color: aliceblue;
     text-decoration: none; /* esse comando tira a sublinhado */
@@ -26,14 +46,16 @@ header a, footer a{
 
 }
 
-header a:hover, footer a:hover{
+header a:hover, footer a:hover{ 
     text-decoration: underline;
-}
+} /* Esse comando, ao passar o mouse por cima aparece o sublinhado*/
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3vw;
 }
 section.normal{
     background-color: white;
@@ -46,7 +68,9 @@ section.imagem{
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block; /* Esse comando cria uma caixa que se adapta ao tamanho do conteudo*/
+    /*width: 400px;*/
+    padding: 5px; /*Esse padding é para o cointeudo do display nao fique grudado na borda da caixa*/
     background-color: rgba(0, 0, 0, 0.24);
 }
 
