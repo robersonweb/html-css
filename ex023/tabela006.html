@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: separate;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even) /*configuração de tabala zebrada*/{
+            background-color: rgb(145, 78, 78);
+        }
+
+        div#conteiner{
+            width: 50vw;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit aperiam facilis, assumenda sapiente nobis non vitae voluptate enim fugiat porro iusto! Quis, laborum! Voluptas est officia velit numquam, minima libero.</p>
+    <div id="conteiner">
+        <table>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lava louça</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>11</td>
+                    <td>01</td>
+                    <td>8</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Amazon Echo</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>11</td>
+                    <td>01</td>
+                    <td>8</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>PS4</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>11</td>
+                    <td>01</td>
+                    <td>8</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Ventilador</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>11</td>
+                    <td>01</td>
+                    <td>8</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Celular</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>11</td>
+                    <td>01</td>
+                    <td>8</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> 
+</body>
+</html>
