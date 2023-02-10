@@ -17,10 +17,30 @@
                     <option value="MG">Minas Gerais</option>
                     <option value="RJ">Rio de Janeiro</option>
                 </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="RS">Rio Grande do Sul</option> 
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+
+                </optgroup>
+
             </select>
         </p>
-        
-        
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="Adm">Administrador</option>
+                <option value="Cont">Contabilista</option>
+                <option value="Dev">Desenvolvedor</option>
+                <option value="Prof">Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
         
         <p>
             <input type="submit" value="Enviar">
