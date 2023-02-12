@@ -1,4 +1,8 @@
 @charset "utf-8";
 
-/* Aparelho deitado (retrato) ou landscape */
+/* Aparelho deitado (paisagem) ou landscape */
 
+body{
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
