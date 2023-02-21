@@ -30,7 +30,7 @@ span#burger{
 
 span#burger:hover{
     background-color: white;
-    color: black;
+    color: black; 
 }
  
 menu{
